@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hand Gesture Detection</title>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <style>
+    canvas, video {
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+    #gesture {
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="gesture">Gesture: 👋</div>
+  <video class="input_video" autoplay playsinline></video>
+  <canvas class="output_canvas" width="640" height="480"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
